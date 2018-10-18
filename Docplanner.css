@@ -1,0 +1,594 @@
+body{
+    font-family:  Helvetica,Arial, sans-serif;
+    font-size: 17px;
+    color:#747474;
+    line-height: 1.3;
+}
+.main-nav{
+    z-index: 5;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: hsla(0,0%,100%,.98);
+    box-shadow: 0 -2px 10px 0 rgba(0,0,0,.15);
+    
+    
+}
+.main-nav:hover{
+    box-shadow: 0 -2px 10px 0 rgba(0,0,0,.15);
+}
+
+.inner-main-nav{
+    max-width:1050px ;
+    position: relative;
+    width: 90%;
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.logo{
+    width: 250px;
+    height: 40px;
+    margin-top: 0;
+}
+.menu-option-nav{
+    list-style: none;       
+}
+a{
+    text-decoration: none;
+    margin-right: 20px;
+    color:#747474;
+}
+.menu-option-nav{
+    display: flex;
+}
+.Aboutus{
+    color:#00b39b; 
+}
+.item-career{
+    position: relative;
+    cursor: pointer; 
+}
+.career:hover{
+    color:#00b39b;       
+}
+.item-department{
+    position: relative;
+    cursor: pointer; 
+}
+.department:hover{
+    color:#00b39b;       
+}
+.department{
+    position: relative;
+    cursor: pointer;
+}
+.department-choix{
+    position: absolute; 
+    visibility: hidden;
+    
+
+}
+.department-choix:hover{
+    visibility: visible;
+}
+.department-choix li{
+    list-style: none;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+
+
+}
+
+.section-service{
+    flex-direction: column;
+    padding-top: 40px;
+    margin: 40px 4px;
+    max-height: 900px;
+}
+.section-service-img{
+    padding-left: 50%;
+    max-width: 30px;
+    max-height: 30px;
+    display: block;
+}
+.section-service h1{
+    padding-left: 16%;
+}
+.section-service-p{
+    display:flex;
+    
+}
+.section-service-p1{
+    width: 50%;
+    margin:5px 5px;
+
+    padding-left: 5px;
+    line-height: 1.5;
+    font-weight: 250;
+}
+.section-service-p2{
+    width: 50%;
+    margin: 5px 5px;
+    line-height: 1.5;
+    font-weight: 250;
+    padding-left:10px; 
+}
+
+
+
+
+
+
+.space-patient-docteur{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+.space-patient{
+    width: 40%;
+    background-color: #00b39b;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.space-patient-design{
+    padding:20px 20px;
+    position: relative;
+}
+.space-patient-h{
+   font-size:10px;
+   position: absolute;
+}
+.space-patient-h h1{
+    color: white;
+}
+.space-patient-section{
+    position: absolute;
+    padding-top: 150px;
+}
+.image-patient{
+    max-width: 350px;
+    max-height: 350px;
+    margin-bottom: 90px;
+    margin-left:250px;
+    margin-top: 150px;
+}
+.space-patient-image{
+    position: absolute;
+}
+
+.space-docteur{
+    width: 40%;
+    background-color: #00b39b;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+.space-docteur-design{
+    padding:20px 20px;
+    position: relative;
+}
+.space-docteur-h{
+    max-width: 400px;
+   font-size:12px;
+   position: absolute;
+}
+.space-docteur-h h1{
+    color: white;
+}
+
+.image-docteur{
+    max-width: 350px;
+    max-height: 350px;
+    margin-bottom: 90px;
+    margin-left:250px;
+    margin-top: 150px;
+}
+.space-docteur-image{
+    position: absolute;
+
+}
+
+
+
+
+
+.section-groups{
+    display: flex;
+    margin: 5em 0em;
+}
+.section-groups-h{
+    width: 30%;
+    margin:1em 2em;
+    font-size: 20px;
+    color:#00b39b;
+}
+.section-groups-name{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-groups-name img{
+    max-width: 140px;
+}
+
+
+
+
+.section-description{
+
+    display:flex;
+    background: #e5faf8;
+    height: 900px;
+    overflow: hidden;
+}
+.section-description-generale-platform{
+    width: 50%;
+    margin-top: 10px;
+}
+.section-disription-logo{
+    background-image: url(data:image/jpeg;base64,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) ;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    width: 600px;
+    height: 500px;
+    background-size: cover;
+
+
+
+}
+.section-platform{
+    max-width: 650px;
+    padding-left: 5px;  
+}
+.section-disription-specifique{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.countries{
+    min-width: 100px;
+    max-height: 200px;
+    font-size: 15px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.countries p{
+    max-width: 300px;
+    margin-left:20px;
+}
+.countries h3{
+    margin-left: 20px;
+    color: #00b39b;
+}
+.countries img{
+    margin-left: 20px;
+}
+.appointment{
+    min-width: 300px;
+    max-height: 200px;
+    font-size: 15px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+
+}
+
+.appointment h3{
+    margin-left: 20px;
+    color: #00b39b;
+}
+.appointment img{
+    margin-left: 20px;
+}
+
+.appointment p{
+    max-width: 300px;
+    margin-left:20px;
+}
+.patients{
+    min-width: 300px;
+    max-height: 200px;
+    font-size: 15px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.patients h3{
+    margin-left: 20px;
+    color: #00b39b;
+}
+.patients img{
+    margin-left: 20px;
+}
+
+.patients p{
+    max-width: 300px;
+    margin-left:20px;
+}
+.doctor{
+    min-width: 300px;
+    max-height: 200px;
+
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.doctor h3{
+    margin-left: 20px;
+    color: #00b39b;
+}
+.doctor img{
+    margin-left: 20px;
+}
+
+.doctor p{
+    max-width: 300px;
+    margin-left:20px;
+}
+
+
+
+
+
+.section-stats-header{
+    margin-top:50px;
+}
+.section-stats-header h2{
+    text-align: center;
+    color: #00b39b;
+    font-size: 20px;    
+}
+.section-stats-header P{
+    text-align: center;
+    
+}
+.section-stats-image{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    justify-content: space-around;
+}
+.Warsaw{
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+.Warsaw:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.wrsaw-h-b{
+    display: flex;
+
+}
+.wrsaw-h-b button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.wrsaw-h-b button:hover{
+    background: #1714c5;
+}
+
+.Barcelona{
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+.Barcelona:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.barcelona-h-p{
+    display: flex;
+
+}
+.barcelona-h-p button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.barcelona-h-p button:hover{
+    background: #1714c5;
+}
+.Istanbul{ 
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+}
+.Istanbul:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.istanbul-h-p{
+    display: flex;
+
+}
+.istanbul-h-p button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.istanbul-h-p button:hover{
+    background: #1714c5;
+}
+.Rome{
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+}
+.Rome:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.rome-h-p{
+    display: flex;
+
+}
+.rome-h-p button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.rome-h-p button:hover{
+    background: #1714c5;
+}
+.Mexicocity{
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+}
+.Mexicocity:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.mexico-h-p{
+    display: flex;
+
+}
+.mexico-h-p button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity:1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.mexico-h-p button:hover{
+    background: #1714c5;    
+}
+
+.Curitiba{
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    background: #fff;
+}
+.Curitiba:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    
+}
+.curitiba-h-p{
+    display: flex;
+
+}
+.curitiba-h-p button{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 120px;
+    height: 30px;
+    background: #3d83df;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.curitiba-h-p button:hover{
+    background: #1714c5;}
+
+
+
+
+
+.footer-p1{
+    text-align: center;
+    font-size: 10px;
+    color: #747474;
+    margin: 0em 12em;   
+}
+.footer-p2{
+    font-size: 10px;
+    max-width: 900px;
+    text-align: center;
+    margin: 2em 15em;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        max-width: 80%;
+    }
+    
+    
+    }
+    .logo-nav{
+        width: 150px;
+        margin-top: 0;
+    }
+    .section-service h1{
+        text-align: center;
+    } 
+    .section-service-p1{
+        margin-left: 40px;  
+        font-size: 15px;
+        text-align: justify;
+
+    }
+    .section-service-p2{
+        margin-left: 40px;  
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .Warsaw{
+        float: left;
+    }
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
